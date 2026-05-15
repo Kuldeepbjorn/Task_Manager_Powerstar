@@ -1,0 +1,49 @@
+# --- Dependencies (all packages) ---
+**/node_modules/
+
+# --- Environment & secrets (never commit real values) ---
+.env
+.env.*
+.envrc
+!.env.example
+!.env.*.example
+*.pem
+*.key
+**/credentials.json
+**/serviceAccount*.json
+
+
+# --- Build & generated output ---
+client/dist/
+server/dist/
+
+# --- Logs & debug ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Caches ---
+.npm/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.eslintcache
+
+# --- Test & coverage ---
+coverage/
+.nyc_output/
+
+# --- OS & editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# --- Optional local tooling ---
+*.local
